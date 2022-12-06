@@ -10,3 +10,7 @@ export interface IForm {
   email: string;
   password: string;
 }
+
+export interface INavbar {
+  isScrolled: boolean;
+}
