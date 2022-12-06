@@ -1,6 +1,7 @@
 import { useRoutes } from 'react-router-dom';
 import Login from './pages/Login';
 import Netflix from './pages/Netflix';
+import Player from './pages/Player';
 import Signup from './pages/Signup';
 
 const App = () => {
@@ -19,7 +20,17 @@ const App = () => {
     element: <Netflix />,
     children: [],
   };
-  const routing = useRoutes([loginRoutes, signupRoutes, netflixRoutes]);
+  const playerRoutes = {
+    path: 'player',
+    element: <Player />,
+    children: [],
+  };
+  const routing = useRoutes([
+    loginRoutes,
+    signupRoutes,
+    netflixRoutes,
+    playerRoutes,
+  ]);
   return <>{routing}</>;
 };
 
