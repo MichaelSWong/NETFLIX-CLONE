@@ -14,3 +14,15 @@ export interface IForm {
 export interface INavbar {
   isScrolled: boolean;
 }
+
+export interface IMovies {
+  id?: number;
+  name?: string;
+  image?: string;
+  genres?: IGenres[];
+}
+
+export interface IGenres {
+  id?: number;
+  name?: string;
+}
